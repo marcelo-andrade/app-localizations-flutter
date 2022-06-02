@@ -1,5 +1,30 @@
 {
-  "language": "English",
+  "language": "en",
+  "@language":{
+    "description": "The current language"
+  },
+  "appName": "International App",
+  "@appName":{
+    "description": "The application name"
+  },
   "title": "English Application",
-  "helloWorld": "Hello World!"
+  "@title": {
+    "description": "The application title"
+  },
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "A programmer greeting"
+  },
+  "hello": "Hello {lastname}, {firstname}",
+  "@hello": {
+    "description": "A welcome message",
+    "placeholders": {
+      "lastname": {
+        "type": "String"
+      },
+      "firstname": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -16,11 +16,12 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
 
-      title: 'App Internacional',
+      onGenerateTitle: (BuildContext context) => AppLocalizations.of(context)!.appName,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

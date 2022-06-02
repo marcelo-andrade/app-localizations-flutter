@@ -1,5 +1,7 @@
 {
-  "language": "Português Brasil",
-  "title": "Aplicativo em Português",
-  "helloWorld": "Olá mundo!"
+  "language": "pt",
+  "appName": "App Internacional",
+  "title": "App em Português",
+  "helloWorld": "Olá mundo!",
+  "hello": "Olá {firstname} {lastname}"
 }

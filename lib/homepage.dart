@@ -9,15 +9,44 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.title),
-      ),
-      body: Center(
-        child: Text(
-          AppLocalizations.of(context)!.helloWorld,
-          style: const TextStyle(
-            fontSize: 50,
-            color: Colors.black,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
+              child: Text(
+                AppLocalizations.of(context)!.language,
+                style: const TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+            ),
           ),
-        ),
+        ],
+      ),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: Column(
+              children: [
+                Text(
+                  AppLocalizations.of(context)!.helloWorld,
+                  style: const TextStyle(
+                    fontSize: 50,
+                    color: Colors.black,
+                  ),
+                ),
+                Text(
+                  AppLocalizations.of(context)!.hello('Andrade', 'Marcelo'),
+                  style: const TextStyle(
+                      fontSize: 18
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
