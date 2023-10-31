@@ -1,3 +1,3 @@
 # Internacionalização
 
-App destinado para exemplo de internacionalização de APPs em Flutter
+App destinado para exemplo de internacionalização de APPs em Flutter.
